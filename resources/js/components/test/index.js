@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
+import axios from "axios";
 
 const index = props => {
+    useEffect(() => {
+        const fetchData = async () => {
+            const res = await axios.get("/api/posts");
+            console.log(res);
+        };
+
+        fetchData();
+    }, []);
+
     return (
         <div>
             <h1>test</h1>
