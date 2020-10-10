@@ -1,13 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Test from "./test";
-
+import { BrowserRouter, Switch, Link, Route } from "react-router-dom";
+import Home from "./Home";
+import Admin from "./Dashboard"
 function App() {
     return (
-        <div className="container">
-            <p>test</p>
-            <Test />
-        </div>
+        <BrowserRouter>
+            <Switch>
+                <Route path="/">
+                    <Home />
+                </Route>
+
+                <Route path="/admin" >
+                    <Admin />
+                </Route>
+            </Switch>
+        </BrowserRouter>
     );
 }
 
