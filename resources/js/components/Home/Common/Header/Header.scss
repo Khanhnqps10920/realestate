@@ -1,0 +1,13 @@
+@import "../../scss/variables.scss";
+
+.header {
+
+    &__logo {
+        color:$base-color;
+
+        h2 {
+            font-weight: bold;
+            font-size:5rem;
+        }
+    }
+}

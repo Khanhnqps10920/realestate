@@ -20,5 +20,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::prefix('posts')->name('api')->group(function () {
-    // Route::get('', [PostController::class, 'index'])->name('get-posts');
+    Route::get('', [PostController::class, 'index'])->name('get-posts');
 });

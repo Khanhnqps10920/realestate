@@ -6394,6 +6394,44 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/Home/Common/Footer/Footer.scss":
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./resources/js/components/Home/Common/Footer/Footer.scss ***!
+  \***************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".cls-1 {\n  fill: #0c4499;\n}\n\n.cls-2 {\n  fill: #fed036;\n}\n\n.cls-3 {\n  fill: #f2af34;\n}\n\n.cls-4 {\n  fill: #136ffb;\n}\n\n.cls-5 {\n  fill: #c1edfe;\n}\n\n.cls-6 {\n  fill: #fff;\n}\n\n.cls-7 {\n  fill: #bfecff;\n}\n\n.cls-8 {\n  fill: #006aff;\n}\n\n.cls-9 {\n  fill: #c1e8fa;\n}\n\n.cls-10 {\n  fill: #194995;\n}\n\n.cls-11 {\n  fill: #c0e7fa;\n}\n\n.footer {\n  margin-top: 5rem;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/Home/Common/Header/Header.scss":
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./resources/js/components/Home/Common/Header/Header.scss ***!
+  \***************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".header__logo {\n  color: #006aff;\n}\n.header__logo h2 {\n  font-weight: bold;\n  font-size: 5rem;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/Home/scss/index.scss":
 /*!*****************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./resources/js/components/Home/scss/index.scss ***!
@@ -6406,7 +6444,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ":root {\n  font-size: 62.5%;\n}\n:root *, :root *:before, :root *:after {\n  box-sizing: border-box;\n}\n:root body {\n  margin: 0;\n  font-size: 1.6rem;\n}\n:root body a, :root body p, :root body span, :root body label {\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 300;\n}\n:root body h1, :root body h2, :root body h3, :root body h4, :root body h5, :root body h6 {\n  font-family: \"Source Sans Pro\", sans-serif;\n}\n:root body a {\n  text-decoration: none;\n}\n:root body a:hover {\n  text-decoration: none;\n}\n:root body ul {\n  margin: 0;\n  padding: 0;\n  list-style-type: none;\n}", ""]);
+exports.push([module.i, ":root {\n  font-size: 62.5%;\n}\n:root *, :root *:before, :root *:after {\n  box-sizing: border-box;\n}\n:root body {\n  margin: 0;\n  font-size: 1.6rem;\n}\n:root body a, :root body p, :root body span, :root body label {\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 300;\n}\n:root body h1, :root body h2, :root body h3, :root body h4, :root body h5, :root body h6 {\n  font-family: \"Source Sans Pro\", sans-serif;\n}\n:root body a {\n  text-decoration: none;\n  color: #000000;\n}\n:root body a:hover {\n  text-decoration: none;\n  color: #006aff;\n}\n:root body ul {\n  margin: 0;\n  padding: 0;\n  list-style-type: none;\n}", ""]);
 
 // exports
 
@@ -70485,7 +70523,12 @@ __webpack_require__.r(__webpack_exports__);
 
 function App() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+    exact: true,
     path: "/"
+  }, true ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Redirect"], {
+    to: "/home"
+  }) : /*#__PURE__*/undefined), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+    path: "/home"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Home__WEBPACK_IMPORTED_MODULE_3__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
     path: "/admin"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Dashboard__WEBPACK_IMPORTED_MODULE_4__["default"], null))));
@@ -70536,15 +70579,335 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Footer_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer.scss */ "./resources/js/components/Home/Common/Footer/Footer.scss");
+/* harmony import */ var _Footer_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Footer_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+ // 
 
 
 
 var Footer = function Footer(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "footer ne"));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "footer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    className: "footer__image",
+    viewBox: "0 0 1200 160",
+    xmlns: "http://www.w3.org/2000/svg",
+    "aria-hidden": "true",
+    focusable: "false"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M98 143c4-3 9 7 9 7s-7-15 0-16c2 0 5 6 6 13 0-6 2-11 4-11 6-1 2 15 2 15l-1 9h-10s-14-14-10-17z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-2",
+    d: "M815 151h1a20 20 0 006-11c2-4 2-9-1-14-7-13-23-6-29 1a16 16 0 00-3 15 19 19 0 0014 12 17 17 0 0012-3z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M806 131h1v29h-1z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-3",
+    d: "M508 149c-1-1-4-1-5 1a7 7 0 00-1 3c0-3-1-12-5-12-3 0-3 8-3 12-2-4-3-6-5-6-6 0 1 13 1 13h14l2-3a19 19 0 002-4 5 5 0 000-2 3 3 0 000-2z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M256 142c2 0 4 5 5 11 0-5 2-9 3-10 6 0 3 9 3 9l-2 8h-8s-7-17-1-18zM835 142c2 0 4 5 5 11 0-5 2-9 3-10 6 0 3 9 3 9l-2 8h-8s-7-17-1-18zM688 138c1-6-3-33-15-29-3 2-7 8-8 11-5 9-7 27 2 34 5 3 12 2 16-2 4-3 5-8 5-14z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M674 126h1v34h-1z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-3",
+    d: "M1141 143c0-4-3-7-3-10l-2-10c-2-2-3-3-6-3s-4 1-6 3l-1 10-4 10c-2 7 2 13 9 13h3a11 11 0 0011-13h-1z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M1130 133h1v27h-1zM199 54l-38 63h77l-39-63z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M149 55h51v62h-51z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M149 54l-38 63h77l-39-63z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-5",
+    d: "M149 61l-34 56h69l-35-56zM115 117h69v21h-69z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-5",
+    d: "M165 117h69v21h-69z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-6",
+    d: "M130 122h14v10h-14zM211 122h14v10h-14z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M115 138h119v22H115z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M146 138h55v22h-55z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M178 101l-22 37h45l-23-37z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M168 101h10v9h-10z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M168 101l-22 37h45l-23-37z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M168 110l-13 22h27l-14-22z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-6",
+    d: "M121 141h21v13h-21zM209 141h20v13h-20z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M146 137h45v23h-45z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M168 138a7 7 0 018 7v15h-15v-15a7 7 0 017-7z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-6",
+    d: "M144 89h11v17h-11z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M858 9h93v151h-93z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M951 9h23v151h-23z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-7",
+    d: "M868 19h13v26h-13zM894 19h14v26h-14zM868 52h13v27h-13zM894 52h14v27h-14zM868 85h13v26h-13zM894 85h14v26h-14zM924 19h14v26h-14zM924 52h14v27h-14zM924 85h14v26h-14z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M883 144h32v16h-32z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-6",
+    d: "M904 127c6 0 11 6 11 13v4h-30v-17z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-7",
+    d: "M885 127a13 13 0 00-12 13v4h25v-4a13 13 0 00-13-13zM848 0h103v9H848z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-8",
+    d: "M951 0h23v9h-23z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M1014 87h59v73h-59z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M1073 87h27v73h-27z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M1082 118h32v42h-32z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M1114 118h12v42h-12z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-9",
+    d: "M1024 98h40v17h-40z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-6",
+    d: "M1032 98h24v17h-24zM1096 130h18v23h-18z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-9",
+    d: "M1114 130h8v23h-8z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-6",
+    d: "M1024 137h13v17h-13z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-9",
+    d: "M1024 154h13v6h-13z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M1045 133h19v27h-19z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-9",
+    d: "M1049 137h15v23h-15zM1010 123h50v4h-50zM1010 85h63v3h-63z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M1073 85h29v3h-29z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M1059 123h7v4h-7z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M1083 113h1v5h-1zM1087 113h1v5h-1zM1090 113h1v5h-1zM1093 113h1v5h-1zM1096 113h1v5h-1zM1099 113h1v5h-1zM1102 113h1v5h-1zM1106 113h1v5h-1zM1109 113h1v5h-1zM1112 113h1v5h-1z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M1115 113h1v5h-1zM1119 113h1v5h-1zM1122 113h1v5h-1z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-9",
+    d: "M1082 111h32v2h-32z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M1114 111h12v2h-12z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-9",
+    d: "M686 123h98v33h-98z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M797 123H686l3-41h105l3 41z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-9",
+    d: "M736 85l24 28h-48l24-28z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-6",
+    d: "M763 115h-54l27-33zm-47-3h40l-20-25z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-6",
+    d: "M733 96h7v10h-7zM702 128h20v19h-20zM763 133h16v14h-16z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M741 134h11v22h-11z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-10",
+    d: "M767 76h12v22h-12z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-11",
+    d: "M711 126h2v23h-2z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-11",
+    d: "M701 138v-2h23v2z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-6",
+    d: "M736 120h50v4h-50z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-6",
+    d: "M737 121v35h-3v-35zM758 120v36h-3v-36zM786 121v35h-3v-35z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-9",
+    d: "M713 93l24 28h-48l24-28z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-6",
+    d: "M740 123h-55l28-33zm-47-3h40l-20-24z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-6",
+    d: "M709 104h8v12h-8z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-10",
+    d: "M786 120h11v36h-11z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M788 134h6v12h-6z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-10",
+    d: "M686 156h111v4H686z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M505 72h103v88H505z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M505 146h103v1H505zM505 140h103v1H505zM505 134h103-103zM505 127h103v1H505zM505 121h103v1H505zM505 115h103v1H505zM505 109h103-103zM505 102h103v1H505zM505 96h103v1H505zM505 90h103v1H505zM505 83h103v1H505zM505 77h103v1H505zM616 106h23v54h-23z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M505 72h38v37h-38z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-5",
+    d: "M497 103h46v7h-46z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M526 127h17v29h-17z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-5",
+    d: "M547 130h8v7h-8zM560 130h8v7h-8zM583 86h7v8h-7zM596 86h8v8h-8zM522 126h21v4h-21z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M616 154h23v1h-23zM616 148h23v1h-23zM616 141h23v1h-23zM616 135h23v1h-23zM616 129h23v1h-23zM616 123h23-23zM616 116h23v1h-23zM578 106h38v54h-38z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M578 154h38v1h-38zM578 148h38v1h-38zM578 141h38v1h-38zM578 135h38v1h-38zM578 129h38v1h-38zM578 123h38-38zM578 116h38v1h-38z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M505 98h38v1h-38zM505 92h38-38zM505 85h38v1h-38zM505 79h38v1h-38z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-5",
+    d: "M574 105h45v7h-45z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M617 105h28v7h-28z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-5",
+    d: "M497 156h81v4h-81z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M387 0h43v24h-43z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-9",
+    d: "M304 0h83v24h-83z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M295 16h95v144h-95z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M387 16h54v144h-54zM295 52h92v4h-92zM295 85h92v4h-92zM295 119h92v4h-92z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-9",
+    d: "M299 23h84v28h-84zM299 58h84v25h-84zM299 91h84v25h-84zM300 125h82v35h-82z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M355 18h3v33h-3zM323 18h4v33h-4zM355 57h3v27h-3zM323 56h4v28h-4zM355 90h3v27h-3zM323 90h4v27h-4zM392 91h44v25h-44zM392 58h44v25h-44zM392 23h45v28h-45z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-6",
+    d: "M326 160v-20h30v20"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M358 160h-4v-19h-27v19h-3v-22h34v22z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M477 143c-5-3-10 7-10 7s7-15 1-16c-3 0-5 6-7 13 0-6-1-11-3-11-6-1-3 15-3 15l2 9h10s14-14 10-17z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-3",
+    d: "M1004 149c-1-1-4-1-5 1a7 7 0 00-1 3c0-3-1-12-5-12-3 0-3 8-3 12-1-4-3-6-5-6-6 0 1 13 1 13h14l2-3a19 19 0 002-4 5 5 0 000-2 3 3 0 000-2z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M1154 145h1a28 28 0 0013 2c6 0 11-2 15-5 11-11-3-22-13-24-6-2-13-1-18 2s-8 9-6 15a15 15 0 008 10z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M1157 122l1 1a19 19 0 0010 1c4 0 8-1 10-4 8-9-2-18-9-20a14 14 0 00-13 2 13 13 0 00-5 12 13 13 0 006 8z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M1165 123h1v37h-1z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-4",
+    d: "M66 137c-1-6-5-11-6-17-2-5-1-11-3-16a14 14 0 00-25 0c-3 5-2 11-3 16l-7 17a23 23 0 008 23h28a23 23 0 008-23z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-1",
+    d: "M45 113h1v47h-1z"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    className: "cls-3",
+    d: "M303 149c-1-1-4-1-5 1a7 7 0 00-1 3c0-3-1-12-5-12-3 0-3 8-3 12-2-4-3-6-5-6-6 0 1 13 1 13h14l2-3a19 19 0 002-4 5 5 0 000-2 3 3 0 000-2zM84 143c-2-3-5-2-7 0a13 13 0 00-2 6c0-6 0-20-6-20-5 0-5 14-5 20-1-7-4-10-7-10-8 1 2 21 2 21h20l3-5a34 34 0 002-6 10 10 0 000-4 6 6 0 000-2z"
+  }))));
 };
 
 Footer.propTypes = {};
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
+
+/***/ }),
+
+/***/ "./resources/js/components/Home/Common/Footer/Footer.scss":
+/*!****************************************************************!*\
+  !*** ./resources/js/components/Home/Common/Footer/Footer.scss ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader!../../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!./Footer.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/Home/Common/Footer/Footer.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 
@@ -70561,53 +70924,92 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _Header_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header.scss */ "./resources/js/components/Home/Common/Header/Header.scss");
+/* harmony import */ var _Header_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Header_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+ // css
 
  // libs
 
 
 
 var Header = function Header(props) {
-  var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useRouteMatch"])(),
-      url = _useRouteMatch.url;
+  var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useRouteMatch"])(),
+      url = _useRouteMatch.url,
+      path = _useRouteMatch.path;
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
-    className: "header py-5 shadow-sm"
+    className: "header py-3 shadow-sm"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
-    className: "container-fluid"
+    className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "d-flex justify-content-between align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "header__links d-flex align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "mr-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "/"
+    className: "mr-5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+    to: "".concat(url)
   }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "mr-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "buy"
+    className: "mr-5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+    to: "".concat(url, "/buy")
   }, "Buy")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "mr-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "sell"
+    className: "mr-5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+    to: "".concat(url, "/sell")
   }, "Sell")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "mr-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "rent"
+    className: "mr-5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+    to: "".concat(url, "/rent")
   }, "Rent"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "header__logo"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Logo")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "header__auth d-flex align-items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "ml-3"
-  }, "Auth"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "ml-3"
-  }, "Auth")))));
+    className: "mr-5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+    to: "".concat(url, "/signin")
+  }, "Signin")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "mr-5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
+    to: "".concat(url, "/register")
+  }, "Register"))))));
 };
 
 Header.propTypes = {};
 /* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./resources/js/components/Home/Common/Header/Header.scss":
+/*!****************************************************************!*\
+  !*** ./resources/js/components/Home/Common/Header/Header.scss ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader!../../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!./Header.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/Home/Common/Header/Header.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 
@@ -70675,12 +71077,13 @@ var index = function index() {
   var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useRouteMatch"])(),
       path = _useRouteMatch.path;
 
+  console.log(path);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Common_Header_Header__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
     exact: true,
     path: path
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "test ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
-    path: "/home/:topicId"
-  }, "some component here")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Common_Footer_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], null));
+    path: "".concat(path, "/:topicId")
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Pages_test__WEBPACK_IMPORTED_MODULE_6__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Common_Footer_Footer__WEBPACK_IMPORTED_MODULE_5__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (index);
@@ -70735,8 +71138,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\ASUS\Desktop\realestate\realestate\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\ASUS\Desktop\realestate\realestate\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\c4t\Desktop\bds\realestate\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\c4t\Desktop\bds\realestate\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

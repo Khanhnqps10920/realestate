@@ -14,7 +14,7 @@ import Test from "./Pages/test";
 const index = () => {
 
   const { path } = useRouteMatch();
-
+  console.log(path);
 
   return (
     <div>
@@ -24,8 +24,8 @@ const index = () => {
           <p>test </p>
         </Route>
 
-        <Route path={`/home/:topicId`}>
-          some component here
+        <Route path={`${path}/:topicId`}>
+          <Test />
         </Route>
       </Switch>
       <Footer />
