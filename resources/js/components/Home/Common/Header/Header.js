@@ -9,7 +9,7 @@ import { Link, useRouteMatch } from "react-router-dom";
 
 const Header = props => {
 
-  const { url,path } = useRouteMatch();
+  const { url, path } = useRouteMatch();
 
   return (
     <header className="header py-3 shadow-sm">
@@ -21,12 +21,12 @@ const Header = props => {
             <li className="mr-5"><Link to={`${url}/sell`}>Sell</Link></li>
             <li className="mr-5"><Link to={`${url}/rent`}>Rent</Link></li>
           </ul>
-          
-          <div className="header__logo">
+
+          <div className="flex-fill text-center header__logo">
             <h2>Logo</h2>
           </div>
           <ul className="header__auth d-flex align-items-center">
-          <li className="mr-5"><Link to={`${url}/signin`}>Signin</Link></li>
+            <li className="mr-5"><Link to={`${url}/signin`}>Signin</Link></li>
             <li className="mr-5"><Link to={`${url}/register`}>Register</Link></li>
           </ul>
         </div>

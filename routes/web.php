@@ -17,6 +17,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('app');
 // });
 
-Route::get('/{path?}', function () {
-    return view('app');
-})->where('path', '.*');
+Route::get('{reactRoutes}', function () {
+    return view('app'); // your start view
+})->where('reactRoutes', '^((?!api).)*$'); // except 'api' word

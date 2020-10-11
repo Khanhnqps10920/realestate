@@ -10,6 +10,7 @@ import { useRouteMatch, Switch, Route, Redirect, Link, useParams } from "react-r
 import Header from './Common/Header/Header';
 import Footer from './Common/Footer/Footer';
 import Test from "./Pages/test";
+import HomePage from './Pages/HomePage/HomePage';
 
 const index = () => {
 
@@ -21,7 +22,7 @@ const index = () => {
       <Header />
       <Switch>
         <Route exact path={path}>
-          <p>test </p>
+          <HomePage />
         </Route>
 
         <Route path={`${path}/:topicId`}>
