@@ -161,6 +161,129 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 
 /***/ }),
 
+/***/ "./node_modules/@n8tb1t/use-scroll-position/lib/index.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@n8tb1t/use-scroll-position/lib/index.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var useScrollPosition_1 = __webpack_require__(/*! ./useScrollPosition */ "./node_modules/@n8tb1t/use-scroll-position/lib/useScrollPosition.js");
+Object.defineProperty(exports, "useScrollPosition", { enumerable: true, get: function () { return useScrollPosition_1.useScrollPosition; } });
+
+
+/***/ }),
+
+/***/ "./node_modules/@n8tb1t/use-scroll-position/lib/useIsomorphicLayoutEffect.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/@n8tb1t/use-scroll-position/lib/useIsomorphicLayoutEffect.js ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.useIsomorphicLayoutEffect = void 0;
+const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+exports.useIsomorphicLayoutEffect = typeof window !== 'undefined' ? react_1.useLayoutEffect : react_1.useEffect;
+
+
+/***/ }),
+
+/***/ "./node_modules/@n8tb1t/use-scroll-position/lib/useScrollPosition.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@n8tb1t/use-scroll-position/lib/useScrollPosition.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.useScrollPosition = void 0;
+const react_1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+const useIsomorphicLayoutEffect_1 = __webpack_require__(/*! ./useIsomorphicLayoutEffect */ "./node_modules/@n8tb1t/use-scroll-position/lib/useIsomorphicLayoutEffect.js");
+const isBrowser = typeof window !== `undefined`;
+const zeroPosition = { x: 0, y: 0 };
+const getClientRect = (element) => element === null || element === void 0 ? void 0 : element.getBoundingClientRect();
+const getScrollPosition = ({ element, useWindow, boundingElement, }) => {
+    if (!isBrowser) {
+        return zeroPosition;
+    }
+    if (useWindow) {
+        return { x: window.scrollX, y: window.scrollY };
+    }
+    const targetPosition = getClientRect((element === null || element === void 0 ? void 0 : element.current) || document.body);
+    const containerPosition = getClientRect(boundingElement === null || boundingElement === void 0 ? void 0 : boundingElement.current);
+    if (!targetPosition) {
+        return zeroPosition;
+    }
+    return containerPosition
+        ? {
+            x: (containerPosition.x || 0) - (targetPosition.x || 0),
+            y: (containerPosition.y || 0) - (targetPosition.y || 0),
+        }
+        : { x: targetPosition.left, y: targetPosition.top };
+};
+exports.useScrollPosition = (effect, deps, element, useWindow, wait, boundingElement) => {
+    const position = react_1.useRef(getScrollPosition({ useWindow, boundingElement }));
+    let throttleTimeout = null;
+    const callBack = () => {
+        const currPos = getScrollPosition({ element, useWindow, boundingElement });
+        effect({ prevPos: position.current, currPos });
+        position.current = currPos;
+        throttleTimeout = null;
+    };
+    useIsomorphicLayoutEffect_1.useIsomorphicLayoutEffect(() => {
+        var _a;
+        if (!isBrowser) {
+            return undefined;
+        }
+        const handleScroll = () => {
+            if (wait) {
+                if (throttleTimeout === null) {
+                    throttleTimeout = setTimeout(callBack, wait);
+                }
+            }
+            else {
+                callBack();
+            }
+        };
+        if (boundingElement) {
+            (_a = boundingElement.current) === null || _a === void 0 ? void 0 : _a.addEventListener('scroll', handleScroll);
+        }
+        else {
+            window.addEventListener('scroll', handleScroll);
+        }
+        return () => {
+            var _a;
+            if (boundingElement) {
+                (_a = boundingElement.current) === null || _a === void 0 ? void 0 : _a.removeEventListener('scroll', handleScroll);
+            }
+            else {
+                window.removeEventListener('scroll', handleScroll);
+            }
+            if (throttleTimeout) {
+                clearTimeout(throttleTimeout);
+            }
+        };
+    }, deps);
+};
+exports.useScrollPosition.defaultProps = {
+    deps: [],
+    element: false,
+    useWindow: false,
+    wait: null,
+    boundingElement: false,
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/axios/index.js":
 /*!*************************************!*\
   !*** ./node_modules/axios/index.js ***!
@@ -6444,7 +6567,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, ":root {\n  font-size: 62.5%;\n}\n:root *,\n:root *:before,\n:root *:after {\n  box-sizing: border-box;\n}\n:root body {\n  margin: 0;\n  font-size: 1.6rem;\n}\n:root body a,\n:root body p,\n:root body span,\n:root body label {\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 300;\n}\n:root body h1,\n:root body h2,\n:root body h3,\n:root body h4,\n:root body h5,\n:root body h6 {\n  font-family: \"Source Sans Pro\", sans-serif;\n}\n:root body p {\n  margin: 0;\n  padding: 0;\n}\n:root body a {\n  text-decoration: none;\n  color: #000000;\n}\n:root body a:hover {\n  text-decoration: none;\n  color: #006aff;\n}\n:root body ul {\n  margin: 0;\n  padding: 0;\n  list-style-type: none;\n}\n:root body .section {\n  padding: 3.2rem 0;\n}\n:root body .section__title {\n  font-size: 2.6rem;\n  line-height: 4rem;\n  color: #000000;\n  font-weight: 700;\n  text-align: center;\n  margin-bottom: 4rem;\n}\n:root body .custom-input {\n  border: none;\n  outline: none;\n  cursor: text;\n  font-size: 1.6rem;\n  padding: 2rem 1.6rem;\n  border-radius: 5px;\n  color: #2A2A33;\n}\n:root body .custom-input:focus {\n  border: 0.2rem solid #006aff;\n}\n:root body .base-btn {\n  padding: 0.9rem 2rem;\n  border: 0.1rem solid #a7a6ab;\n  background: #ffffff;\n  color: #006aff;\n  transition: all 0.2s ease 0s;\n  border-radius: 0.5rem;\n  font-weight: 600;\n}\n:root body .base-btn:hover {\n  color: #ffffff;\n  background: #006aff;\n}\n\n.category {\n  padding: 2.4rem;\n  cursor: pointer;\n  background: #ffffff;\n  transition: all 300ms ease-in-out 0s;\n}\n.category:hover {\n  transform: scale(1.02) translate(0, -0.8rem);\n}\n.category__information {\n  text-align: center;\n}\n.category__information--title {\n  margin: 1.5rem 0;\n  font-size: 3rem;\n}\n.category__information--description {\n  color: #000000;\n}\n.category__information--button {\n  margin-top: 1rem;\n}", ""]);
+exports.push([module.i, ":root {\n  font-size: 62.5%;\n}\n:root *,\n:root *:before,\n:root *:after {\n  box-sizing: border-box;\n}\n:root body {\n  margin: 0;\n  font-size: 1.6rem;\n}\n:root body a,\n:root body p,\n:root body span,\n:root body label {\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 300;\n}\n:root body h1,\n:root body h2,\n:root body h3,\n:root body h4,\n:root body h5,\n:root body h6 {\n  font-family: \"Source Sans Pro\", sans-serif;\n}\n:root body p {\n  margin: 0;\n  padding: 0;\n}\n:root body a {\n  text-decoration: none;\n  color: #000000;\n}\n:root body a:hover {\n  text-decoration: none;\n  color: #006aff;\n}\n:root body ul {\n  margin: 0;\n  padding: 0;\n  list-style-type: none;\n}\n:root body .section {\n  padding: 3.2rem 0;\n}\n:root body .section__title {\n  font-size: 2.6rem;\n  line-height: 4rem;\n  color: #000000;\n  font-weight: 700;\n  text-align: center;\n  margin-bottom: 4rem;\n}\n:root body .custom-input {\n  border: none;\n  outline: none;\n  cursor: text;\n  font-size: 1.6rem;\n  padding: 2rem 1.6rem;\n  border-radius: 5px;\n  color: #2A2A33;\n}\n:root body .custom-input:focus {\n  border: 0.2rem solid #006aff;\n}\n:root body .base-btn {\n  padding: 0.9rem 2rem;\n  border: 0.1rem solid #a7a6ab;\n  background: #ffffff;\n  color: #006aff;\n  transition: all 0.2s ease 0s;\n  border-radius: 0.5rem;\n  font-weight: 600;\n}\n:root body .base-btn:hover {\n  color: #ffffff;\n  background: #006aff;\n}\n\n.category {\n  padding: 2.4rem;\n  cursor: pointer;\n  background: #ffffff;\n  transition: all 300ms ease-in-out 0s;\n}\n.category:hover {\n  transform: scale(1.02) translate(0, -0.8rem);\n}\n.category__information {\n  text-align: center;\n}\n.category__information--title {\n  margin: 1.5rem 0;\n  font-size: 3rem;\n}\n.category__information--description {\n  color: #000000;\n}\n.category__information--button {\n  margin-top: 1rem;\n}\n\n@media (min-width: 768px) and (max-width: 1023px) {\n  .category {\n    display: flex;\n    margin-bottom: 1.5rem;\n  }\n}\n@media (max-width: 479px) {\n  .category {\n    display: flex;\n    margin-bottom: 1.5rem;\n  }\n  .category__img {\n    width: 55%;\n  }\n  .category__information {\n    width: 50%;\n  }\n  .category__information--description {\n    display: none;\n  }\n  .category__information--button {\n    font-size: 1rem;\n  }\n}\n@media (min-width: 480px) and (max-width: 768px) {\n  .category {\n    display: flex;\n    margin-bottom: 1.5rem;\n  }\n}", ""]);
 
 // exports
 
@@ -6501,7 +6624,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".news {\n  background: #ffffff;\n}", ""]);
+exports.push([module.i, ".news {\n  background: #ffffff;\n}\n.news__items--item {\n  width: 33%;\n}\n\n@media (min-width: 768px) and (max-width: 1023px) {\n  .news__items--item {\n    width: 49%;\n  }\n}\n@media (max-width: 479px) {\n  .news__items--item {\n    width: 100%;\n  }\n}\n@media (min-width: 480px) and (max-width: 768px) {\n  .news__items--item {\n    width: 100%;\n  }\n}", ""]);
 
 // exports
 
@@ -6520,7 +6643,26 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".property {\n  border-bottom: 0.2rem solid #006aff;\n}\n.property__top-time {\n  top: 0;\n  left: 0;\n  padding: 0.5rem 1.5rem;\n  color: #ffffff;\n  background: rgba(0, 0, 0, 0.54);\n  font-size: 1.3rem;\n}\n.property__top-wish {\n  top: 1rem;\n  right: 1rem;\n  font-size: 3rem;\n  color: #ffffff;\n}\n.property__top-name {\n  right: 1rem;\n  bottom: 1rem;\n  color: #ffffff;\n  letter-spacing: 0.3rem;\n}\n.property__information-detail li {\n  border-right: 1px solid #D1D1D5;\n}\n.property__information-detail li:last-child {\n  border: none;\n}", ""]);
+exports.push([module.i, ".property {\n  border-bottom: 0.2rem solid #006aff;\n  cursor: pointer;\n}\n.property__top-time {\n  top: 0;\n  left: 0;\n  padding: 0.5rem 1.5rem;\n  color: #ffffff;\n  background: rgba(0, 0, 0, 0.54);\n  font-size: 1.3rem;\n}\n.property__top-wish {\n  top: 1rem;\n  right: 1rem;\n  font-size: 3rem;\n  color: #ffffff;\n}\n.property__top-name {\n  right: 1rem;\n  bottom: 1rem;\n  color: #ffffff;\n  letter-spacing: 0.3rem;\n}\n.property__information-detail li {\n  border-right: 1px solid #D1D1D5;\n}\n.property__information-detail li:last-child {\n  border: none;\n}\n.property__information-address {\n  margin-top: 0.5rem;\n  font-weight: 400 !important;\n}\n.property__information-status {\n  width: 1rem;\n  height: 1rem;\n  border-radius: 50%;\n  background: red;\n  display: inline-block;\n  margin-right: 0.5rem;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/Home/SearchBar/SearchBar.scss":
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./resources/js/components/Home/SearchBar/SearchBar.scss ***!
+  \**************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".search {\n  width: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  background: white;\n  padding: 1.5rem;\n  z-index: 2000;\n}\n.search__input {\n  border: 0.1px solid #D1D1D5 !important;\n  display: block;\n  margin: 0 auto;\n  padding: 0.5rem 1rem !important;\n  width: 80%;\n}", ""]);
 
 // exports
 
@@ -71404,12 +71546,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Property_Property__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Property/Property */ "./resources/js/components/Home/Property/Property.js");
 /* harmony import */ var _News_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./News.scss */ "./resources/js/components/Home/News/News.scss");
 /* harmony import */ var _News_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_News_scss__WEBPACK_IMPORTED_MODULE_2__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
  // css
 
 
 
 var News = function News(props) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([1, 2, 3, 4, 5, 6]),
+      _useState2 = _slicedToArray(_useState, 2),
+      properties = _useState2[0],
+      setProperties = _useState2[1];
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "section news"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -71417,8 +71576,13 @@ var News = function News(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     className: "section__title"
   }, "Recent News"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "d-flex mt-3 news__items"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Property_Property__WEBPACK_IMPORTED_MODULE_1__["default"], null))));
+    className: "d-flex justify-content-between mt-3 news__items flex-wrap"
+  }, properties.map(function (item) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      key: item,
+      className: "news__items--item my-2"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Property_Property__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+  }))));
 };
 
 News.propTypes = {};
@@ -71614,6 +71778,71 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./resources/js/components/Home/SearchBar/SearchBar.js":
+/*!*************************************************************!*\
+  !*** ./resources/js/components/Home/SearchBar/SearchBar.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _SearchBar_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SearchBar.scss */ "./resources/js/components/Home/SearchBar/SearchBar.scss");
+/* harmony import */ var _SearchBar_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_SearchBar_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+ // css
+
+
+
+var SearchBar = function SearchBar(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "search"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    type: "text",
+    className: "search__input custom-input",
+    placeholder: "Enter district, city or zip code"
+  }));
+};
+
+SearchBar.propTypes = {};
+/* harmony default export */ __webpack_exports__["default"] = (SearchBar);
+
+/***/ }),
+
+/***/ "./resources/js/components/Home/SearchBar/SearchBar.scss":
+/*!***************************************************************!*\
+  !*** ./resources/js/components/Home/SearchBar/SearchBar.scss ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader!../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!./SearchBar.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/Home/SearchBar/SearchBar.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./resources/js/components/Home/index.js":
 /*!***********************************************!*\
   !*** ./resources/js/components/Home/index.js ***!
@@ -71634,6 +71863,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Common_Footer_Footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Common/Footer/Footer */ "./resources/js/components/Home/Common/Footer/Footer.js");
 /* harmony import */ var _Pages_test__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Pages/test */ "./resources/js/components/Home/Pages/test.js");
 /* harmony import */ var _Pages_HomePage_HomePage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Pages/HomePage/HomePage */ "./resources/js/components/Home/Pages/HomePage/HomePage.js");
+/* harmony import */ var _SearchBar_SearchBar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./SearchBar/SearchBar */ "./resources/js/components/Home/SearchBar/SearchBar.js");
+/* harmony import */ var _n8tb1t_use_scroll_position__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @n8tb1t/use-scroll-position */ "./node_modules/@n8tb1t/use-scroll-position/lib/index.js");
+/* harmony import */ var _n8tb1t_use_scroll_position__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_n8tb1t_use_scroll_position__WEBPACK_IMPORTED_MODULE_9__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
  // styles
 
@@ -71645,13 +71889,28 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+ // libs
+
+
 
 var index = function index() {
   var _useRouteMatch = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useRouteMatch"])(),
       path = _useRouteMatch.path;
 
   console.log(path);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Common_Header_Header__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState2 = _slicedToArray(_useState, 2),
+      hideOnScroll = _useState2[0],
+      setHideOnScroll = _useState2[1];
+
+  Object(_n8tb1t_use_scroll_position__WEBPACK_IMPORTED_MODULE_9__["useScrollPosition"])(function (_ref) {
+    var prevPos = _ref.prevPos,
+        currPos = _ref.currPos;
+    var isShow = currPos.y < -80;
+    setHideOnScroll(isShow);
+  }, [hideOnScroll]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, hideOnScroll && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SearchBar_SearchBar__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Common_Header_Header__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
     exact: true,
     path: path
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Pages_HomePage_HomePage__WEBPACK_IMPORTED_MODULE_7__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
@@ -71711,8 +71970,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\c4t\Desktop\bds\realestate\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\c4t\Desktop\bds\realestate\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\ASUS\Desktop\realestate\realestate\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\ASUS\Desktop\realestate\realestate\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -1,4 +1,5 @@
 @import "../../scss/index.scss";
+@import "../../scss/responsive.scss";
 
 .category {
   padding:2.4rem;
@@ -25,5 +26,41 @@
     &--button {
       margin-top: 1rem;
     }
+  }
+}
+
+@include tablet {
+  .category {
+    display:flex;
+    margin-bottom:1.5rem;
+  }
+}
+
+@include mobile {
+  .category {
+    display:flex;
+    margin-bottom:1.5rem;
+
+    &__img {
+      width:55%;
+    }
+
+    &__information {
+      width:50%;
+      &--description {
+        display:none;
+      }
+
+      &--button {
+        font-size:1rem;
+      }
+    }
+  }
+}
+
+@include sm {
+  .category {
+    display:flex;
+    margin-bottom:1.5rem;
   }
 }

@@ -1,5 +1,46 @@
 @import "../scss/variables.scss";
 
+@import "../scss/responsive.scss";
+
 .news { 
     background:$white-color;
+
+    &__items {
+        
+        &--item {
+            width: 33%;
+        }
+    }
 }
+
+@include tablet {
+    .news { 
+        &__items {
+            &--item {
+                width:49%;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .news { 
+        &__items {
+            &--item {
+                width:100%;
+            }
+        }
+    }
+}
+
+
+@include sm {
+    .news { 
+        &__items {
+            &--item {
+                width:100%;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,19 @@
+@import "../scss/variables.scss";
+
+.search {
+  width:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  background:white;
+  padding:1.5rem;
+  z-index:2000;
+
+  &__input {
+    border:.1px solid $border-color !important;
+    display:block;
+    margin:0 auto;
+    padding:.5rem 1rem !important;
+    width:80%;
+  }
+}

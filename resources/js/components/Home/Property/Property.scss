@@ -3,6 +3,7 @@
 .property {
 
     border-bottom:.2rem solid $base-color; 
+    cursor: pointer;
 
     &__top {
 
@@ -40,6 +41,20 @@
                     border: none;
                 }
             }
+        }
+
+        &-address {
+            margin-top:.5rem;
+            font-weight: 400 !important;
+        }
+
+        &-status {
+            width:1rem;
+            height: 1rem;
+            border-radius:50%;
+            background:red;
+            display:inline-block;
+            margin-right:.5rem;
         }
     }
 }
