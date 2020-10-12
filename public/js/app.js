@@ -6406,7 +6406,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".banner {\n  width: 100%;\n  height: 100vh;\n  padding: 1.6rem;\n  display: flex;\n  padding-top: 6rem;\n  align-items: center;\n  background-size: cover;\n  background-position: center;\n  flex-flow: column;\n}\n.banner__title {\n  color: #ffffff;\n  margin-bottom: 3rem;\n  font-size: 6rem;\n  line-height: 7.2rem;\n}\n.banner__sub-title {\n  font-size: 4rem;\n  line-height: 5rem;\n  margin-bottom: 3rem;\n  color: #ffffff;\n}\n.banner__search-input {\n  width: 60%;\n  margin: 0 auto;\n  text-align: center;\n}\n.banner__search-input input {\n  width: 100%;\n}\n.banner__search-input i {\n  right: 0.5rem;\n  top: 50%;\n  transform: translateY(-50%);\n  font-size: 2rem;\n  color: #006aff;\n}", ""]);
+exports.push([module.i, ".banner {\n  width: 100%;\n  height: 100vh;\n  padding: 1.6rem;\n  display: flex;\n  padding-top: 6rem;\n  align-items: center;\n  background-size: cover;\n  background-position: center;\n  flex-flow: column;\n}\n.banner__title {\n  color: #ffffff;\n  margin-bottom: 3rem;\n  font-size: 6rem;\n  line-height: 7.2rem;\n}\n.banner__sub-title {\n  font-size: 4rem;\n  line-height: 5rem;\n  margin-bottom: 3rem;\n  color: #ffffff;\n}\n.banner__search-input {\n  width: 60%;\n  margin: 0 auto;\n  text-align: center;\n}\n.banner__search-input input {\n  width: 100%;\n}\n.banner__search-input i {\n  right: 1.5rem;\n  top: 50%;\n  transform: translateY(-50%);\n  font-size: 2rem;\n  color: #006aff;\n}", ""]);
 
 // exports
 
@@ -6425,7 +6425,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".categories {\n  background-color: #f9f9fb;\n  padding: 3.2rem 0;\n}\n.categories__title {\n  font-size: 2.6rem;\n  line-height: 4rem;\n  color: #000000;\n  font-weight: 700;\n  text-align: center;\n  margin-bottom: 4rem;\n}\n.categories__line {\n  width: 14rem;\n  margin: 0 auto;\n  height: 0.2rem;\n  background: #ffd237;\n}", ""]);
+exports.push([module.i, ".categories {\n  background-color: #f9f9fb;\n}\n.categories__line {\n  width: 14rem;\n  margin: 0 auto;\n  height: 0.2rem;\n  background: #ffd237;\n}", ""]);
 
 // exports
 
@@ -6444,7 +6444,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, ".category {\n  padding: 2.4rem;\n}", ""]);
+exports.push([module.i, ":root {\n  font-size: 62.5%;\n}\n:root *,\n:root *:before,\n:root *:after {\n  box-sizing: border-box;\n}\n:root body {\n  margin: 0;\n  font-size: 1.6rem;\n}\n:root body a,\n:root body p,\n:root body span,\n:root body label {\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 300;\n}\n:root body h1,\n:root body h2,\n:root body h3,\n:root body h4,\n:root body h5,\n:root body h6 {\n  font-family: \"Source Sans Pro\", sans-serif;\n}\n:root body p {\n  margin: 0;\n  padding: 0;\n}\n:root body a {\n  text-decoration: none;\n  color: #000000;\n}\n:root body a:hover {\n  text-decoration: none;\n  color: #006aff;\n}\n:root body ul {\n  margin: 0;\n  padding: 0;\n  list-style-type: none;\n}\n:root body .section {\n  padding: 3.2rem 0;\n}\n:root body .section__title {\n  font-size: 2.6rem;\n  line-height: 4rem;\n  color: #000000;\n  font-weight: 700;\n  text-align: center;\n  margin-bottom: 4rem;\n}\n:root body .custom-input {\n  border: none;\n  outline: none;\n  cursor: text;\n  font-size: 1.6rem;\n  padding: 2rem 1.6rem;\n  border-radius: 5px;\n  color: #2A2A33;\n}\n:root body .custom-input:focus {\n  border: 0.2rem solid #006aff;\n}\n:root body .base-btn {\n  padding: 0.9rem 2rem;\n  border: 0.1rem solid #a7a6ab;\n  background: #ffffff;\n  color: #006aff;\n  transition: all 0.2s ease 0s;\n  border-radius: 0.5rem;\n  font-weight: 600;\n}\n:root body .base-btn:hover {\n  color: #ffffff;\n  background: #006aff;\n}\n\n.category {\n  padding: 2.4rem;\n  cursor: pointer;\n  background: #ffffff;\n  transition: all 300ms ease-in-out 0s;\n}\n.category:hover {\n  transform: scale(1.02) translate(0, -0.8rem);\n}\n.category__information {\n  text-align: center;\n}\n.category__information--title {\n  margin: 1.5rem 0;\n  font-size: 3rem;\n}\n.category__information--description {\n  color: #000000;\n}\n.category__information--button {\n  margin-top: 1rem;\n}", ""]);
 
 // exports
 
@@ -6489,6 +6489,44 @@ exports.push([module.i, ".header__logo {\n  color: #006aff;\n}\n.header__logo h2
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/Home/News/News.scss":
+/*!****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./resources/js/components/Home/News/News.scss ***!
+  \****************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".news {\n  background: #ffffff;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/Home/Property/Property.scss":
+/*!************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./resources/js/components/Home/Property/Property.scss ***!
+  \************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".property {\n  border-bottom: 0.2rem solid #006aff;\n}\n.property__top-time {\n  top: 0;\n  left: 0;\n  padding: 0.5rem 1.5rem;\n  color: #ffffff;\n  background: rgba(0, 0, 0, 0.54);\n  font-size: 1.3rem;\n}\n.property__top-wish {\n  top: 1rem;\n  right: 1rem;\n  font-size: 3rem;\n  color: #ffffff;\n}\n.property__top-name {\n  right: 1rem;\n  bottom: 1rem;\n  color: #ffffff;\n  letter-spacing: 0.3rem;\n}\n.property__information-detail li {\n  border-right: 1px solid #D1D1D5;\n}\n.property__information-detail li:last-child {\n  border: none;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/Home/scss/index.scss":
 /*!*****************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./resources/js/components/Home/scss/index.scss ***!
@@ -6501,7 +6539,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ":root {\n  font-size: 62.5%;\n}\n:root *, :root *:before, :root *:after {\n  box-sizing: border-box;\n}\n:root body {\n  margin: 0;\n  font-size: 1.6rem;\n}\n:root body a, :root body p, :root body span, :root body label {\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 300;\n}\n:root body h1, :root body h2, :root body h3, :root body h4, :root body h5, :root body h6 {\n  font-family: \"Source Sans Pro\", sans-serif;\n}\n:root body a {\n  text-decoration: none;\n  color: #000000;\n}\n:root body a:hover {\n  text-decoration: none;\n  color: #006aff;\n}\n:root body ul {\n  margin: 0;\n  padding: 0;\n  list-style-type: none;\n}\n:root body .custom-input {\n  border: none;\n  outline: none;\n  cursor: text;\n  font-size: 1.6rem;\n  padding: 2rem 1.6rem;\n  border-radius: 5px;\n  color: #2A2A33;\n}\n:root body .custom-input:focus {\n  border: 0.2rem solid #006aff;\n}\n:root body .base-btn {\n  padding: 0.9rem 2rem;\n  border: 0.1rem solid #a7a6ab;\n  background: #ffffff;\n  color: #006aff;\n  transition: all 0.2s ease 0s;\n  border-radius: 0.5rem;\n  font-weight: 600;\n}\n:root body .base-btn:hover {\n  color: #ffffff;\n  background: #006aff;\n}", ""]);
+exports.push([module.i, ":root {\n  font-size: 62.5%;\n}\n:root *,\n:root *:before,\n:root *:after {\n  box-sizing: border-box;\n}\n:root body {\n  margin: 0;\n  font-size: 1.6rem;\n}\n:root body a,\n:root body p,\n:root body span,\n:root body label {\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 300;\n}\n:root body h1,\n:root body h2,\n:root body h3,\n:root body h4,\n:root body h5,\n:root body h6 {\n  font-family: \"Source Sans Pro\", sans-serif;\n}\n:root body p {\n  margin: 0;\n  padding: 0;\n}\n:root body a {\n  text-decoration: none;\n  color: #000000;\n}\n:root body a:hover {\n  text-decoration: none;\n  color: #006aff;\n}\n:root body ul {\n  margin: 0;\n  padding: 0;\n  list-style-type: none;\n}\n:root body .section {\n  padding: 3.2rem 0;\n}\n:root body .section__title {\n  font-size: 2.6rem;\n  line-height: 4rem;\n  color: #000000;\n  font-weight: 700;\n  text-align: center;\n  margin-bottom: 4rem;\n}\n:root body .custom-input {\n  border: none;\n  outline: none;\n  cursor: text;\n  font-size: 1.6rem;\n  padding: 2rem 1.6rem;\n  border-radius: 5px;\n  color: #2A2A33;\n}\n:root body .custom-input:focus {\n  border: 0.2rem solid #006aff;\n}\n:root body .base-btn {\n  padding: 0.9rem 2rem;\n  border: 0.1rem solid #a7a6ab;\n  background: #ffffff;\n  color: #006aff;\n  transition: all 0.2s ease 0s;\n  border-radius: 0.5rem;\n  font-weight: 600;\n}\n:root body .base-btn:hover {\n  color: #ffffff;\n  background: #006aff;\n}", ""]);
 
 // exports
 
@@ -70716,6 +70754,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Categories_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Categories.scss */ "./resources/js/components/Home/Categories/Categories.scss");
 /* harmony import */ var _Categories_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Categories_scss__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _Category_Category__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Category/Category */ "./resources/js/components/Home/Categories/Category/Category.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
  // scss
 
@@ -70723,19 +70773,52 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Categories = function Categories(props) {
+  // default data
+  var initialState = [{
+    id: 1,
+    title: "Buy a home",
+    description: "Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.",
+    buttonTitle: "Search homes",
+    imgUrl: "https://www.zillowstatic.com/s3/homepage/static/Buy_a_home.png"
+  }, {
+    id: 2,
+    title: "Sell a home",
+    description: "Whether you sell with new Zillow Offers™ or take another approach, we’ll help you navigate the path to a successful sale.",
+    buttonTitle: "See your options",
+    imgUrl: "https://www.zillowstatic.com/s3/homepage/static/Sell_a_home.png"
+  }, {
+    id: 3,
+    title: "Rent a home",
+    description: "We’re creating a seamless online experience – from shopping on the largest rental network, to applying, to paying rent.",
+    buttonTitle: "Find rentals",
+    imgUrl: "https://www.zillowstatic.com/s3/homepage/static/Rent_a_home.png"
+  }];
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(initialState),
+      _useState2 = _slicedToArray(_useState, 2),
+      categories = _useState2[0],
+      setCategories = _useState2[1];
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "categories"
+    className: "section categories"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    className: "categories__title"
+    className: "section__title"
   }, "We have the most listings and constant updates.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "So you'll never miss out"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "categories__line"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "categories__list mt-4 row"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "col-lg-4 col-md-4 col-12"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Category_Category__WEBPACK_IMPORTED_MODULE_3__["default"], null)))));
+    className: "categories__list mt-5 row"
+  }, categories.map(function (item) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "col-lg-4 col-md-12 sm-12 xs-12 col-12",
+      key: item.id
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Category_Category__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      item: item
+    }));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "categories__line mt-5"
+  })));
 };
 
 Categories.propTypes = {};
@@ -70793,27 +70876,39 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var Category = function Category(props) {
+var Category = function Category(_ref) {
+  var item = _ref.item;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "shadow category"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "category__img"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "img-fluid",
-    src: "",
+    src: item.imgUrl,
     alt: "category-img"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "category__information"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
     className: "category__information--title"
-  }, "Default text"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, item.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "category__information--description"
-  }, "Find your place with an immersive photo experience and the most listings, including things you won\u2019t find anywhere else."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "category__button base-btn"
-  }, "Search homes")));
+  }, item.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "category__information--button base-btn"
+  }, item.buttonTitle)));
 };
 
-Category.propTypes = {};
+Category.propTypes = {
+  item: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object
+};
+Category.defaultProps = {
+  item: {
+    id: 1,
+    title: "Buy a home",
+    description: "Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.",
+    buttonTitle: "Search homes",
+    imgUrl: "https://www.zillowstatic.com/s3/homepage/static/Buy_a_home.png"
+  }
+};
 /* harmony default export */ __webpack_exports__["default"] = (Category);
 
 /***/ }),
@@ -71295,6 +71390,72 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./resources/js/components/Home/News/News.js":
+/*!***************************************************!*\
+  !*** ./resources/js/components/Home/News/News.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Property_Property__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Property/Property */ "./resources/js/components/Home/Property/Property.js");
+/* harmony import */ var _News_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./News.scss */ "./resources/js/components/Home/News/News.scss");
+/* harmony import */ var _News_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_News_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+ // css
+
+
+
+var News = function News(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: "section news"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "section__title"
+  }, "Recent News"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "d-flex mt-3 news__items"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Property_Property__WEBPACK_IMPORTED_MODULE_1__["default"], null))));
+};
+
+News.propTypes = {};
+/* harmony default export */ __webpack_exports__["default"] = (News);
+
+/***/ }),
+
+/***/ "./resources/js/components/Home/News/News.scss":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/Home/News/News.scss ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader!../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!./News.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/Home/News/News.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./resources/js/components/Home/Pages/HomePage/HomePage.js":
 /*!*****************************************************************!*\
   !*** ./resources/js/components/Home/Pages/HomePage/HomePage.js ***!
@@ -71310,6 +71471,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Banner_Banner__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Banner/Banner */ "./resources/js/components/Home/Banner/Banner.js");
 /* harmony import */ var _Categories_Categories__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Categories/Categories */ "./resources/js/components/Home/Categories/Categories.js");
+/* harmony import */ var _News_News__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../News/News */ "./resources/js/components/Home/News/News.js");
+
 
 
 
@@ -71318,7 +71481,7 @@ __webpack_require__.r(__webpack_exports__);
 var HomePage = function HomePage(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "page"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Banner_Banner__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Categories_Categories__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Banner_Banner__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Categories_Categories__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_News_News__WEBPACK_IMPORTED_MODULE_4__["default"], null));
 };
 
 HomePage.propTypes = {};
@@ -71353,6 +71516,101 @@ var test = function test(props) {
 
 test.propTypes = {};
 /* harmony default export */ __webpack_exports__["default"] = (test);
+
+/***/ }),
+
+/***/ "./resources/js/components/Home/Property/Property.js":
+/*!***********************************************************!*\
+  !*** ./resources/js/components/Home/Property/Property.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Property_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Property.scss */ "./resources/js/components/Home/Property/Property.scss");
+/* harmony import */ var _Property_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Property_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+ // scss
+
+
+
+var Property = function Property(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "property shadow"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "property__top position-relative"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "property__top-time position-absolute"
+  }, "9 days ago"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "property__top-wish far fa-heart position-absolute"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "https://photos.zillowstatic.com/p_e/IS76c3x3zt75q30000000000.jpg",
+    alt: "property image",
+    className: "img-fluid"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "property__top-name position-absolute"
+  }, "PMI New Orleans")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "property__information p-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "property__information-heading d-flex justify-content-between"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "property__information-price font-weight-bold"
+  }, "$950/mo"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "property__information-detail d-flex"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "px-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "1"), " bd"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "px-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "1"), " ba"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "px-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "600"), " sqft"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "property__information-address"
+  }, "3201 Cleary Ave #2, Metairie, LA 70002"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "property__information-type"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "property__information-status"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "property__information-text-status"
+  }, "Apartment for rent"))));
+};
+
+Property.propTypes = {};
+/* harmony default export */ __webpack_exports__["default"] = (Property);
+
+/***/ }),
+
+/***/ "./resources/js/components/Home/Property/Property.scss":
+/*!*************************************************************!*\
+  !*** ./resources/js/components/Home/Property/Property.scss ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader!../../../../../node_modules/postcss-loader/src??ref--7-2!../../../../../node_modules/sass-loader/dist/cjs.js??ref--7-3!./Property.scss */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./resources/js/components/Home/Property/Property.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ }),
 
@@ -71453,8 +71711,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\ASUS\Desktop\realestate\realestate\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\ASUS\Desktop\realestate\realestate\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\c4t\Desktop\bds\realestate\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\c4t\Desktop\bds\realestate\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

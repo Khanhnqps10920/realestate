@@ -2,5 +2,16 @@
     "emmet.excludeLanguages": ["markdown"],
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
-    }
+    },
+    "[json]": {
+    "breadcrumbs.showEvents": true,
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    "files.associations": {
+        "*.js":"javascriptreact"
+    },
+    "editor.formatOnSave": true
 }

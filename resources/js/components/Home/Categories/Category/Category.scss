@@ -1,3 +1,29 @@
+@import "../../scss/index.scss";
+
 .category {
   padding:2.4rem;
+  cursor: pointer;
+  background:$white-color;
+  transition: all 300ms ease-in-out 0s;
+
+  &:hover {
+    transform: scale(1.02) translate(0,-.8rem);
+  }
+
+  &__information {
+    text-align: center;
+
+    &--title {
+      margin:1.5rem 0;
+      font-size:3rem;
+    }
+
+    &--description {
+      color: $black-color;
+    }
+
+    &--button {
+      margin-top: 1rem;
+    }
+  }
 }
