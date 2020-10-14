@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import PropTypes from 'prop-types'
+import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
 // styles
 import "./scss/index.scss";
 
@@ -7,46 +7,45 @@ import "./scss/index.scss";
 import { useRouteMatch, Switch, Route } from "react-router-dom";
 
 // components
-import Header from './Common/Header/Header';
-import Footer from './Common/Footer/Footer';
+import Header from "./Common/Header/Header";
+import Footer from "./Common/Footer/Footer";
 import Test from "./Pages/test";
-import HomePage from './Pages/HomePage/HomePage';
-import SearchBar from './SearchBar/SearchBar';
+import HomePage from "./Pages/HomePage/HomePage";
+import SearchBar from "./SearchBar/SearchBar";
 
 // libs
-import { useScrollPosition } from '@n8tb1t/use-scroll-position';
+import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 
 const index = () => {
+    const { path } = useRouteMatch();
+    console.log(path);
 
+    const [hideOnScroll, setHideOnScroll] = useState(false);
 
-  const { path } = useRouteMatch();
-  console.log(path);
+    useScrollPosition(
+        ({ prevPos, currPos }) => {
+            const isShow = currPos.y < -80;
+            setHideOnScroll(isShow);
+        },
+        [hideOnScroll]
+    );
 
-  const [hideOnScroll, setHideOnScroll] = useState(false);
+    return (
+        <div>
+            <SearchBar show={hideOnScroll} />
+            <Header />
+            <Switch>
+                <Route exact path={path}>
+                    <HomePage />
+                </Route>
 
-  useScrollPosition(({ prevPos, currPos }) => {
-    const isShow = currPos.y < -80;
-    setHideOnScroll(isShow);
-  }, [hideOnScroll])
+                <Route path={`${path}/:topicId`}>
+                    <Test />
+                </Route>
+            </Switch>
+            <Footer />
+        </div>
+    );
+};
 
-  return (
-    <div>
-      { hideOnScroll && <SearchBar />}
-      <Header />
-      <Switch>
-        <Route exact path={path}>
-          <HomePage />
-        </Route>
-
-        <Route path={`${path}/:topicId`}>
-          <Test />
-        </Route>
-      </Switch>
-      <Footer />
-    </div>
-  )
-}
-
-
-
-export default index
+export default index;

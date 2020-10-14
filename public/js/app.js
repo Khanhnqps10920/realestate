@@ -6529,7 +6529,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".banner {\n  width: 100%;\n  height: 100vh;\n  padding: 1.6rem;\n  display: flex;\n  padding-top: 6rem;\n  align-items: center;\n  background-size: cover;\n  background-position: center;\n  flex-flow: column;\n}\n.banner__title {\n  color: #ffffff;\n  margin-bottom: 3rem;\n  font-size: 6rem;\n  line-height: 7.2rem;\n}\n.banner__sub-title {\n  font-size: 4rem;\n  line-height: 5rem;\n  margin-bottom: 3rem;\n  color: #ffffff;\n}\n.banner__search-input {\n  width: 60%;\n  margin: 0 auto;\n  text-align: center;\n}\n.banner__search-input input {\n  width: 100%;\n}\n.banner__search-input i {\n  right: 1.5rem;\n  top: 50%;\n  transform: translateY(-50%);\n  font-size: 2rem;\n  color: #006aff;\n}", ""]);
+exports.push([module.i, ".banner {\n  width: 100%;\n  height: 100vh;\n  padding: 1.6rem;\n  display: flex;\n  padding-top: 6rem;\n  align-items: center;\n  background-size: cover;\n  background-position: center;\n  flex-flow: column;\n  text-align: center;\n}\n.banner__title {\n  color: #ffffff;\n  margin-bottom: 3rem;\n  font-size: 6rem;\n  line-height: 7.2rem;\n}\n.banner__sub-title {\n  font-size: 4rem;\n  line-height: 5rem;\n  margin-bottom: 3rem;\n  color: #ffffff;\n}\n.banner__search-input {\n  width: 60%;\n  margin: 0 auto;\n  text-align: center;\n}\n.banner__search-input input {\n  width: 100%;\n}\n.banner__search-input i {\n  right: 1.5rem;\n  top: 50%;\n  transform: translateY(-50%);\n  font-size: 2rem;\n  color: #006aff;\n}\n\n@media (max-width: 479px) {\n  .banner {\n    height: 50vh;\n  }\n  .banner__title {\n    font-size: 4rem;\n  }\n  .banner__sub-title {\n    font-size: 2.5rem;\n  }\n  .banner__search-input {\n    width: 100%;\n  }\n}", ""]);
 
 // exports
 
@@ -6567,7 +6567,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, ":root {\n  font-size: 62.5%;\n}\n:root *,\n:root *:before,\n:root *:after {\n  box-sizing: border-box;\n}\n:root body {\n  margin: 0;\n  font-size: 1.6rem;\n}\n:root body a,\n:root body p,\n:root body span,\n:root body label {\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 300;\n}\n:root body h1,\n:root body h2,\n:root body h3,\n:root body h4,\n:root body h5,\n:root body h6 {\n  font-family: \"Source Sans Pro\", sans-serif;\n}\n:root body p {\n  margin: 0;\n  padding: 0;\n}\n:root body a {\n  text-decoration: none;\n  color: #000000;\n}\n:root body a:hover {\n  text-decoration: none;\n  color: #006aff;\n}\n:root body ul {\n  margin: 0;\n  padding: 0;\n  list-style-type: none;\n}\n:root body .section {\n  padding: 3.2rem 0;\n}\n:root body .section__title {\n  font-size: 2.6rem;\n  line-height: 4rem;\n  color: #000000;\n  font-weight: 700;\n  text-align: center;\n  margin-bottom: 4rem;\n}\n:root body .custom-input {\n  border: none;\n  outline: none;\n  cursor: text;\n  font-size: 1.6rem;\n  padding: 2rem 1.6rem;\n  border-radius: 5px;\n  color: #2A2A33;\n}\n:root body .custom-input:focus {\n  border: 0.2rem solid #006aff;\n}\n:root body .base-btn {\n  padding: 0.9rem 2rem;\n  border: 0.1rem solid #a7a6ab;\n  background: #ffffff;\n  color: #006aff;\n  transition: all 0.2s ease 0s;\n  border-radius: 0.5rem;\n  font-weight: 600;\n}\n:root body .base-btn:hover {\n  color: #ffffff;\n  background: #006aff;\n}\n\n.category {\n  padding: 2.4rem;\n  cursor: pointer;\n  background: #ffffff;\n  transition: all 300ms ease-in-out 0s;\n}\n.category:hover {\n  transform: scale(1.02) translate(0, -0.8rem);\n}\n.category__information {\n  text-align: center;\n}\n.category__information--title {\n  margin: 1.5rem 0;\n  font-size: 3rem;\n}\n.category__information--description {\n  color: #000000;\n}\n.category__information--button {\n  margin-top: 1rem;\n}\n\n@media (min-width: 768px) and (max-width: 1023px) {\n  .category {\n    display: flex;\n    margin-bottom: 1.5rem;\n  }\n}\n@media (max-width: 479px) {\n  .category {\n    display: flex;\n    margin-bottom: 1.5rem;\n  }\n  .category__img {\n    width: 55%;\n  }\n  .category__information {\n    width: 50%;\n  }\n  .category__information--description {\n    display: none;\n  }\n  .category__information--button {\n    font-size: 1rem;\n  }\n}\n@media (min-width: 480px) and (max-width: 768px) {\n  .category {\n    display: flex;\n    margin-bottom: 1.5rem;\n  }\n}", ""]);
+exports.push([module.i, ":root {\n  font-size: 62.5%;\n}\n\n*,\n*:before,\n*:after {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-size: 1.6rem;\n}\n\na,\np,\nspan,\nlabel {\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 300;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-family: \"Source Sans Pro\", sans-serif;\n}\n\np {\n  margin: 0;\n  padding: 0;\n}\n\na {\n  text-decoration: none;\n  color: #000000;\n}\na:hover {\n  text-decoration: none;\n  color: #006aff;\n}\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style-type: none;\n}\n\n.section {\n  padding: 3.2rem 0;\n}\n.section__title {\n  font-size: 2.6rem;\n  line-height: 4rem;\n  color: #000000;\n  font-weight: 700;\n  text-align: center;\n  margin-bottom: 4rem;\n}\n\n.custom-input {\n  border: 0.1px solid #D1D1D5;\n  outline: none;\n  cursor: text;\n  font-size: 1.6rem;\n  padding: 2rem 1.6rem;\n  border-radius: 5px;\n  color: #2A2A33;\n  transition: 0.4s ease;\n}\n.custom-input:focus {\n  border: 0.1rem solid #006aff;\n}\n\n.base-btn {\n  padding: 0.9rem 2rem;\n  border: 0.1rem solid #a7a6ab;\n  background: #ffffff;\n  color: #006aff;\n  transition: all 0.2s ease 0s;\n  border-radius: 0.5rem;\n  font-weight: 600;\n}\n.base-btn:hover {\n  color: #ffffff;\n  background: #006aff;\n}\n\n.category {\n  padding: 2.4rem;\n  cursor: pointer;\n  background: #ffffff;\n  transition: all 300ms ease-in-out 0s;\n}\n.category:hover {\n  transform: scale(1.02) translate(0, -0.8rem);\n}\n.category__information {\n  text-align: center;\n}\n.category__information--title {\n  margin: 1.5rem 0;\n  font-size: 3rem;\n}\n.category__information--description {\n  color: #000000;\n}\n.category__information--button {\n  margin-top: 1rem;\n}\n\n@media (min-width: 768px) and (max-width: 1023px) {\n  .category {\n    display: flex;\n    margin-bottom: 1.5rem;\n  }\n}\n@media (max-width: 479px) {\n  .category {\n    display: flex;\n    margin-bottom: 1.5rem;\n  }\n  .category__img {\n    width: 55%;\n  }\n  .category__information {\n    width: 50%;\n  }\n  .category__information--description {\n    display: none;\n  }\n  .category__information--button {\n    font-size: 1rem;\n  }\n}\n@media (min-width: 480px) and (max-width: 768px) {\n  .category {\n    display: flex;\n    margin-bottom: 1.5rem;\n  }\n}", ""]);
 
 // exports
 
@@ -6605,7 +6605,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, ".header__logo {\n  color: #006aff;\n}\n.header__logo h2 {\n  font-weight: bold;\n  font-size: 5rem;\n}", ""]);
+exports.push([module.i, ".header__links {\n  display: flex;\n  align-items: center;\n}\n.header__logo {\n  color: #006aff;\n}\n.header__logo h2 {\n  font-weight: bold;\n  font-size: 5rem;\n}\n.header__auth {\n  display: flex;\n  align-items: center;\n}\n.header__icons {\n  cursor: pointer;\n}\n.header__icons:hover {\n  color: #006aff;\n}\n\n@media (max-width: 479px) {\n  .header__links, .header__auth {\n    display: none;\n  }\n}\n@media (min-width: 1024px) {\n  .header__icons {\n    display: none;\n  }\n}", ""]);
 
 // exports
 
@@ -6662,7 +6662,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".search {\n  width: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  background: white;\n  padding: 1.5rem;\n  z-index: 2000;\n}\n.search__input {\n  border: 0.1px solid #D1D1D5 !important;\n  display: block;\n  margin: 0 auto;\n  padding: 0.5rem 1rem !important;\n  width: 80%;\n}", ""]);
+exports.push([module.i, ".search {\n  width: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  background: white;\n  padding: 1.5rem;\n  z-index: 2000;\n  transition: 0.4s all;\n  visibility: hidden;\n  opacity: 0;\n}\n.search.show {\n  visibility: visible;\n  opacity: 1;\n}\n.search__wrapper {\n  width: 80%;\n  display: block;\n  margin: 0 auto;\n}\n.search__input {\n  padding: 0.5rem 1rem;\n  width: 100%;\n}\n.search i {\n  right: 1rem;\n  top: 1rem;\n  color: #006aff;\n}", ""]);
 
 // exports
 
@@ -6681,7 +6681,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ":root {\n  font-size: 62.5%;\n}\n:root *,\n:root *:before,\n:root *:after {\n  box-sizing: border-box;\n}\n:root body {\n  margin: 0;\n  font-size: 1.6rem;\n}\n:root body a,\n:root body p,\n:root body span,\n:root body label {\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 300;\n}\n:root body h1,\n:root body h2,\n:root body h3,\n:root body h4,\n:root body h5,\n:root body h6 {\n  font-family: \"Source Sans Pro\", sans-serif;\n}\n:root body p {\n  margin: 0;\n  padding: 0;\n}\n:root body a {\n  text-decoration: none;\n  color: #000000;\n}\n:root body a:hover {\n  text-decoration: none;\n  color: #006aff;\n}\n:root body ul {\n  margin: 0;\n  padding: 0;\n  list-style-type: none;\n}\n:root body .section {\n  padding: 3.2rem 0;\n}\n:root body .section__title {\n  font-size: 2.6rem;\n  line-height: 4rem;\n  color: #000000;\n  font-weight: 700;\n  text-align: center;\n  margin-bottom: 4rem;\n}\n:root body .custom-input {\n  border: none;\n  outline: none;\n  cursor: text;\n  font-size: 1.6rem;\n  padding: 2rem 1.6rem;\n  border-radius: 5px;\n  color: #2A2A33;\n}\n:root body .custom-input:focus {\n  border: 0.2rem solid #006aff;\n}\n:root body .base-btn {\n  padding: 0.9rem 2rem;\n  border: 0.1rem solid #a7a6ab;\n  background: #ffffff;\n  color: #006aff;\n  transition: all 0.2s ease 0s;\n  border-radius: 0.5rem;\n  font-weight: 600;\n}\n:root body .base-btn:hover {\n  color: #ffffff;\n  background: #006aff;\n}", ""]);
+exports.push([module.i, ":root {\n  font-size: 62.5%;\n}\n\n*,\n*:before,\n*:after {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-size: 1.6rem;\n}\n\na,\np,\nspan,\nlabel {\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 300;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-family: \"Source Sans Pro\", sans-serif;\n}\n\np {\n  margin: 0;\n  padding: 0;\n}\n\na {\n  text-decoration: none;\n  color: #000000;\n}\na:hover {\n  text-decoration: none;\n  color: #006aff;\n}\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style-type: none;\n}\n\n.section {\n  padding: 3.2rem 0;\n}\n.section__title {\n  font-size: 2.6rem;\n  line-height: 4rem;\n  color: #000000;\n  font-weight: 700;\n  text-align: center;\n  margin-bottom: 4rem;\n}\n\n.custom-input {\n  border: 0.1px solid #D1D1D5;\n  outline: none;\n  cursor: text;\n  font-size: 1.6rem;\n  padding: 2rem 1.6rem;\n  border-radius: 5px;\n  color: #2A2A33;\n  transition: 0.4s ease;\n}\n.custom-input:focus {\n  border: 0.1rem solid #006aff;\n}\n\n.base-btn {\n  padding: 0.9rem 2rem;\n  border: 0.1rem solid #a7a6ab;\n  background: #ffffff;\n  color: #006aff;\n  transition: all 0.2s ease 0s;\n  border-radius: 0.5rem;\n  font-weight: 600;\n}\n.base-btn:hover {\n  color: #ffffff;\n  background: #006aff;\n}", ""]);
 
 // exports
 
@@ -71463,9 +71463,9 @@ var Header = function Header(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "d-flex justify-content-between align-items-center"
+    className: "d-flex justify-content-between align-items-center flex-wrap"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "header__links d-flex align-items-center"
+    className: "header__links "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "mr-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
@@ -71482,10 +71482,12 @@ var Header = function Header(props) {
     className: "mr-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
     to: "".concat(url, "/rent")
-  }, "Rent"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Rent"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "header__icons fas fa-bars"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex-fill text-center header__logo"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Logo")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "header__auth d-flex align-items-center"
+    className: "header__auth"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "mr-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
@@ -71494,7 +71496,9 @@ var Header = function Header(props) {
     className: "mr-5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], {
     to: "".concat(url, "/register")
-  }, "Register"))))));
+  }, "Register"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "header__icons fas fa-user-friends"
+  }))));
 };
 
 Header.propTypes = {};
@@ -71798,17 +71802,27 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var SearchBar = function SearchBar(props) {
+var SearchBar = function SearchBar(_ref) {
+  var show = _ref.show;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "search"
+    className: "search ".concat(show ? "show" : "")
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "search__wrapper position-relative"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "text",
     className: "search__input custom-input",
     placeholder: "Enter district, city or zip code"
-  }));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fas fa-search position-absolute"
+  })));
 };
 
-SearchBar.propTypes = {};
+SearchBar.propTypes = {
+  show: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool
+};
+SearchBar.defaultProps = {
+  show: false
+};
 /* harmony default export */ __webpack_exports__["default"] = (SearchBar);
 
 /***/ }),
@@ -71910,7 +71924,9 @@ var index = function index() {
     var isShow = currPos.y < -80;
     setHideOnScroll(isShow);
   }, [hideOnScroll]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, hideOnScroll && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SearchBar_SearchBar__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Common_Header_Header__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SearchBar_SearchBar__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    show: hideOnScroll
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Common_Header_Header__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
     exact: true,
     path: path
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Pages_HomePage_HomePage__WEBPACK_IMPORTED_MODULE_7__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Route"], {
@@ -71970,8 +71986,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\ASUS\Desktop\realestate\realestate\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\ASUS\Desktop\realestate\realestate\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\c4t\Desktop\bds\realestate\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\c4t\Desktop\bds\realestate\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

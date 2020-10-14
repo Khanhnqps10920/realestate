@@ -1,13 +1,51 @@
 @import "../../scss/variables.scss";
+@import "../../scss/responsive.scss";
 
 .header {
 
+    &__links {
+        display: flex;
+        align-items: center;
+    }
+
     &__logo {
-        color:$base-color;
+        color: $base-color;
 
         h2 {
             font-weight: bold;
-            font-size:5rem;
+            font-size: 5rem;
         }
     }
+
+    &__auth {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icons {
+        cursor: pointer;
+
+        &:hover {
+            color: $base-color;
+        }
+    }
+}
+
+@include mobile {
+    .header {
+        &__links, &__auth {
+            display: none;
+        }
+
+    }
+}
+
+@include desktop {
+    .header {
+        &__icons {
+            display: none;
+        }
+    }
+
+    
 }
