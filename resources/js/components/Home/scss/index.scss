@@ -97,4 +97,35 @@
             }
         }
     }
+
+
+}
+
+button {
+    outline: none;
+    background: transparent;
+    border: .1rem solid rgba(209, 209, 213);
+    color: $base-color;
+    font-size: 1.2rem;
+    font-weight: 400;
+    height: 100%;
+    padding:0 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: .2s ease 0s;
+    border-radius:.2rem;
+    line-height: 2.2rem;
+    display:block;
+}
+
+button:hover {
+    border-color: $base-color;
+}
+
+button:active, button:focus {
+    border-color: $base-color;
+    background-color:$base-color;
+    color:$white-color;
+    outline:none;
 }

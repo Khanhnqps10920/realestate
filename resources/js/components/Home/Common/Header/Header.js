@@ -13,7 +13,7 @@ const Header = props => {
 
   return (
     <header className="header py-3 shadow-sm">
-      <nav className="container">
+      <nav className="container-fluid">
         <div className="d-flex justify-content-between align-items-center">
           <ul className="header__links d-flex align-items-center">
             <li className="mr-5"><Link to={`${url}`}>Home</Link></li>

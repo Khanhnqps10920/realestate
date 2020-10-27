@@ -11,7 +11,9 @@ import Header from './Common/Header/Header';
 import Footer from './Common/Footer/Footer';
 import Test from "./Pages/test";
 import HomePage from './Pages/HomePage/HomePage';
+import CollectionsPage from './Pages/CollectionsPage/CollectionsPage';
 import SearchBar from './SearchBar/SearchBar';
+
 
 // libs
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
@@ -28,7 +30,6 @@ const index = () => {
     const isShow = currPos.y < -80;
     setHideOnScroll(isShow);
   }, [hideOnScroll])
-
   return (
     <div>
       { hideOnScroll && <SearchBar />}
@@ -38,8 +39,12 @@ const index = () => {
           <HomePage />
         </Route>
 
-        <Route path={`${path}/:topicId`}>
+        <Route exact path={`${path}/:topicId`}>
           <Test />
+        </Route>
+
+        <Route path={`${path}/collections/:location`}>
+          <CollectionsPage />
         </Route>
       </Switch>
       <Footer />

@@ -1,0 +1,48 @@
+@import "../scss/variables.scss";
+
+.nav {
+  width:100%;
+  padding:1rem 0;
+
+  &__list {
+    display:flex;
+    flex-flow: wrap;
+    align-items: stretch;
+  
+    &--filter {
+      margin:0 .5rem;
+      min-width: 10rem;
+      button {
+        width:100%;
+      }
+    }
+
+    &--search {
+      position: relative;
+      margin-right:.5rem;
+      
+
+      input {
+        width:100%;
+        padding:.5rem;
+        border-radius:.5rem;
+        border:.1rem solid $black-color;
+        outline:none;
+
+        &:focus, &:active {
+          border-color:$base-color;
+        }
+      }
+
+      i {
+        position: absolute;
+        color:$base-color;
+        font-size:1.3rem;
+        right:1rem;
+        top:1.2rem;
+      }
+    }
+  }
+
+
+}

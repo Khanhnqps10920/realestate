@@ -7,8 +7,8 @@ import "./Footer.scss";
 const Footer = props => {
   return (
     <div className="footer">
-      <div className="container">
-      
+      <div className="container-fluid">
+
         <svg className="footer__image" viewBox="0 0 1200 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
           <path className="cls-1" d="M98 143c4-3 9 7 9 7s-7-15 0-16c2 0 5 6 6 13 0-6 2-11 4-11 6-1 2 15 2 15l-1 9h-10s-14-14-10-17z"></path>
           <path className="cls-2" d="M815 151h1a20 20 0 006-11c2-4 2-9-1-14-7-13-23-6-29 1a16 16 0 00-3 15 19 19 0 0014 12 17 17 0 0012-3z"></path>
@@ -102,8 +102,8 @@ const Footer = props => {
           <path className="cls-4" d="M66 137c-1-6-5-11-6-17-2-5-1-11-3-16a14 14 0 00-25 0c-3 5-2 11-3 16l-7 17a23 23 0 008 23h28a23 23 0 008-23z"></path>
           <path className="cls-1" d="M45 113h1v47h-1z"></path>
           <path className="cls-3" d="M303 149c-1-1-4-1-5 1a7 7 0 00-1 3c0-3-1-12-5-12-3 0-3 8-3 12-2-4-3-6-5-6-6 0 1 13 1 13h14l2-3a19 19 0 002-4 5 5 0 000-2 3 3 0 000-2zM84 143c-2-3-5-2-7 0a13 13 0 00-2 6c0-6 0-20-6-20-5 0-5 14-5 20-1-7-4-10-7-10-8 1 2 21 2 21h20l3-5a34 34 0 002-6 10 10 0 000-4 6 6 0 000-2z"></path>
-      </svg>
-      
+        </svg>
+
       </div>
     </div>
   )
