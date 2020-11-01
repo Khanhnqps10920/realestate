@@ -3,12 +3,17 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Switch, Redirect, Route } from "react-router-dom";
 import Home from "./Home";
 import Admin from "./Dashboard"
+import CollectionsPage from "./Home/Pages/CollectionsPage/CollectionsPage";
+
 function App() {
     return (
         <BrowserRouter>
             <Switch>
                 <Route exact path="/">
-                    {true ? <Redirect to="/home" /> : <Redirect to="/admin"  /> }
+                    {true ? <Redirect to="/home" /> : <Redirect to="/admin" />}
+                </Route>
+                <Route path={`/collections/:location`}>
+                    <CollectionsPage />
                 </Route>
                 <Route path="/home">
                     <Home />

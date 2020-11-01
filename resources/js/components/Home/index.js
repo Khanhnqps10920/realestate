@@ -11,7 +11,6 @@ import Header from './Common/Header/Header';
 import Footer from './Common/Footer/Footer';
 import Test from "./Pages/test";
 import HomePage from './Pages/HomePage/HomePage';
-import CollectionsPage from './Pages/CollectionsPage/CollectionsPage';
 import SearchBar from './SearchBar/SearchBar';
 
 
@@ -43,9 +42,6 @@ const index = () => {
           <Test />
         </Route>
 
-        <Route path={`${path}/collections/:location`}>
-          <CollectionsPage />
-        </Route>
       </Switch>
       <Footer />
     </div>

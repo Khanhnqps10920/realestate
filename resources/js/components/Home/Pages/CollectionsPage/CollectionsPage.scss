@@ -2,27 +2,33 @@
 
 .collections {
 
-  &__content {
-    width:100%;
-    display:flex;
-    height: 100vh;
- 
-    &-map {
-      flex: 1 1 100%;
-      height: 100%;
-      background:green
-    }
+    &__content {
+        width: 100%;
+        display: flex;
+        height: calc(100vh - 143px);
 
-    &-result {
-      flex: 0 0 75rem;
-      height: 100%;
-      background:red;
-      overflow-y: auto;
+        &-map {
+            flex: 1 1 100%;
+            height: 100%;
+            background: green
+        }
 
-      .test {
-        height: 20000px;
-      }
+        &-result {
+            flex: 0 0 75rem;
+            height: 100%;
+            overflow-y: auto;
+
+
+            .search-result {
+                &__select {
+                    color: $base-color;
+                }
+
+                &__item {
+                    width: 49%;
+                }
+            }
+        }
     }
-  }
 
 }
