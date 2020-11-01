@@ -8,83 +8,48 @@ import "./Header.scss";
 import { Link, useRouteMatch } from "react-router-dom";
 
 const Header = props => {
-<<<<<<< HEAD
-
   const { url, path } = useRouteMatch();
 
   return (
     <header className="header py-3 shadow-sm">
-      <nav className="container-fluid">
-        <div className="d-flex justify-content-between align-items-center">
-          <ul className="header__links d-flex align-items-center">
-            <li className="mr-5"><Link to={`${url}`}>Home</Link></li>
-            <li className="mr-5"><Link to={`${url}/buy`}>Buy</Link></li>
-            <li className="mr-5"><Link to={`${url}/sell`}>Sell</Link></li>
-            <li className="mr-5"><Link to={`${url}/rent`}>Rent</Link></li>
+      <nav className="container">
+        <div className="d-flex justify-content-between align-items-center flex-wrap">
+          <ul className="header__links ">
+            <li className="mr-5">
+              <Link to={`${url}`}>Home</Link>
+            </li>
+            <li className="mr-5">
+              <Link to={`${url}/buy`}>Buy</Link>
+            </li>
+            <li className="mr-5">
+              <Link to={`${url}/sell`}>Sell</Link>
+            </li>
+            <li className="mr-5">
+              <Link to={`${url}/rent`}>Rent</Link>
+            </li>
           </ul>
+
+          <i className="header__icons fas fa-bars"></i>
 
           <div className="flex-fill text-center header__logo">
             <h2>Logo</h2>
           </div>
-          <ul className="header__auth d-flex align-items-center">
-            <li className="mr-5"><Link to={`${url}/signin`}>Signin</Link></li>
-            <li className="mr-5"><Link to={`${url}/register`}>Register</Link></li>
+          <ul className="header__auth">
+            <li className="mr-5">
+              <Link to={`${url}/signin`}>Signin</Link>
+            </li>
+            <li className="mr-5">
+              <Link to={`${url}/register`}>Register</Link>
+            </li>
           </ul>
+
+          <i className="header__icons fas fa-user-friends"></i>
         </div>
       </nav>
     </header>
-  )
-}
-
-Header.propTypes = {
-
-}
-
-export default Header
-=======
-    const { url, path } = useRouteMatch();
-
-    return (
-        <header className="header py-3 shadow-sm">
-            <nav className="container">
-                <div className="d-flex justify-content-between align-items-center flex-wrap">
-                    <ul className="header__links ">
-                        <li className="mr-5">
-                            <Link to={`${url}`}>Home</Link>
-                        </li>
-                        <li className="mr-5">
-                            <Link to={`${url}/buy`}>Buy</Link>
-                        </li>
-                        <li className="mr-5">
-                            <Link to={`${url}/sell`}>Sell</Link>
-                        </li>
-                        <li className="mr-5">
-                            <Link to={`${url}/rent`}>Rent</Link>
-                        </li>
-                    </ul>
-
-                    <i className="header__icons fas fa-bars"></i>
-
-                    <div className="flex-fill text-center header__logo">
-                        <h2>Logo</h2>
-                    </div>
-                    <ul className="header__auth">
-                        <li className="mr-5">
-                            <Link to={`${url}/signin`}>Signin</Link>
-                        </li>
-                        <li className="mr-5">
-                            <Link to={`${url}/register`}>Register</Link>
-                        </li>
-                    </ul>
-
-                    <i className="header__icons fas fa-user-friends"></i>
-                </div>
-            </nav>
-        </header>
-    );
+  );
 };
 
 Header.propTypes = {};
 
 export default Header;
->>>>>>> 02a684bc48ea3e5829367697a02569665bbdafb0

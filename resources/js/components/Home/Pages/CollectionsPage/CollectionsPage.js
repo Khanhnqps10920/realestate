@@ -40,9 +40,9 @@ const CollectionsPage = props => {
             {/* properties */}
             <div className="d-flex justify-content-between mt-3 flex-wrap">
               {
-                searchResult.map((item) => {
+                searchResult.map((item, index) => {
                   return (
-                    <div key={item} className="search-result__item my-2">
+                    <div key={index} className="search-result__item my-2">
                       <Property />
                     </div>
                   )
