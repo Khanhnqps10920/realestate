@@ -1,12 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { useHistory } from "react-router-dom";
 
 // scss
 import "./Property.scss";
 
 const Property = props => {
+    const history = useHistory();
+
+    const handeLinkToDetail = () => {
+        history.push('/detail/productid');
+    }
     return (
-        <div className="property shadow">
+        <div className="property shadow" onClick={handeLinkToDetail}>
             <div className="property__top position-relative">
                 <span className="property__top-time position-absolute">
                     9 days ago

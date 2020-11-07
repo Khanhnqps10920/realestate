@@ -29,7 +29,7 @@ const Header = props => {
             </li>
           </ul>
 
-          <i className="header__icons fas fa-bars"></i>
+          <i className="header__icons fas fa-bars .d-none .d-sm-block .d-md-none"></i>
 
           <div className="flex-fill text-center header__logo">
             <h2>Logo</h2>

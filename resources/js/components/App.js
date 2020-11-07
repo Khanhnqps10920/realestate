@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Redirect, Route } from "react-router-dom";
 import Home from "./Home";
 import Admin from "./Dashboard"
 import CollectionsPage from "./Home/Pages/CollectionsPage/CollectionsPage";
+import DetailPage from "./Home/Pages/DetailPage/DetailPage";
 
 function App() {
     return (
@@ -14,6 +15,9 @@ function App() {
                 </Route>
                 <Route path={`/collections/:location`}>
                     <CollectionsPage />
+                </Route>
+                <Route path="/detail/:propertyId">
+                    <DetailPage />
                 </Route>
                 <Route path="/home">
                     <Home />

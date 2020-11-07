@@ -19,7 +19,11 @@ const CollectionsPage = props => {
       <Header />
       <Nav />
       <div className="collections__content">
+
+        {/* map */}
         <div className="collections__content-map"></div>
+
+        {/* search result */}
         <div className="collections__content-result">
           <div className="search-result p-3">
             <h3 className="search-result__title">
