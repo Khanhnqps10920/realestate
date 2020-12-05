@@ -14,19 +14,34 @@ import "./CollectionsPage.scss";
 const CollectionsPage = props => {
     const [searchResult, setSearchResult] = useState(Array.from(new Array(20)));
 
-    useEffect(() => {
-        console.log(process.env.MIX_REACT_APP_MAPBOX_TOKEN);
-    }, []);
-
-    //
     const [viewport, setViewport] = useState({
         latitude: 45.4211,
-        longtitude: -75.6903,
+        longitude: -75.6903,
         scrollZoom: true,
         zoom: 9,
         width: "100%",
         height: "100%"
     });
+
+    useEffect(() => {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            setViewport(prevState => {
+                console.log(prevState, "prev");
+                console.log(position);
+                return {
+                    ...prevState,
+                    latitude: position.coords.latitude,
+                    longitude: position.coords.longitude
+                };
+            });
+        });
+    }, []);
+
+    useEffect(() => {
+        console.log(viewport);
+    }, [viewport]);
+
+    //
 
     return (
         <div className="collections page">
@@ -40,6 +55,7 @@ const CollectionsPage = props => {
                         mapboxApiAccessToken={
                             process.env.MIX_REACT_APP_MAPBOX_TOKEN
                         }
+                        mapStyle="mapbox://styles/khanhnguyen3009/ckhonyzfk14ez1alak9oox2qe"
                         onViewportChange={viewport =>
                             setViewport(() => viewport)
                         }

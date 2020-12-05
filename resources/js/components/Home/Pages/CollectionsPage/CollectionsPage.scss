@@ -1,23 +1,22 @@
 @import "../../scss/variables.scss";
+@import "../../scss/responsive.scss";
 
 .collections {
-
     &__content {
         width: 100%;
         display: flex;
         height: calc(100vh - 143px);
 
         &-map {
-            flex: 1 1 100%;
+            flex: 1;
+            background: green;
             height: 100%;
-            background: green
         }
 
         &-result {
             flex: 0 0 75rem;
             height: 100%;
             overflow-y: auto;
-
 
             .search-result {
                 &__select {
@@ -30,5 +29,23 @@
             }
         }
     }
+}
 
+@include tablet {
+    .collections {
+        &__content {
+            display: block;
+            height: auto;
+            &-map {
+                width: 100vw;
+                height: 80vh;
+                display: block;
+            }
+
+            &-result {
+                flex: 0 0 100%;
+                overflow-y: scroll;
+            }
+        }
+    }
 }

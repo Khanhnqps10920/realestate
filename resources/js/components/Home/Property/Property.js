@@ -8,11 +8,14 @@ import "./Property.scss";
 const Property = props => {
     const history = useHistory();
 
-    const handeLinkToDetail = () => {
-        history.push('/detail/productid');
-    }
+    const handeLinkToDetail = productId => {
+        history.push(`/detail/${productId}`);
+    };
     return (
-        <div className="property shadow" onClick={handeLinkToDetail}>
+        <div
+            className="property shadow"
+            onClick={() => handeLinkToDetail("someId")}
+        >
             <div className="property__top position-relative">
                 <span className="property__top-time position-absolute">
                     9 days ago
