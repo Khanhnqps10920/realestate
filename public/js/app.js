@@ -8203,7 +8203,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../../node_module
 
 
 // module
-exports.push([module.i, ":root {\n  font-size: 62.5%;\n}\n\n*,\n*:before,\n*:after {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-size: 1.6rem;\n}\n\na,\np,\nspan,\nlabel {\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 300;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-family: \"Source Sans Pro\", sans-serif;\n}\n\np {\n  margin: 0;\n  padding: 0;\n}\n\na {\n  text-decoration: none;\n  color: #000000;\n}\na:hover {\n  text-decoration: none;\n  color: #006aff;\n}\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style-type: none;\n}\n\n.section {\n  padding: 3.2rem 0;\n}\n.section__title {\n  font-size: 2.6rem;\n  line-height: 4rem;\n  color: #000000;\n  font-weight: 700;\n  text-align: center;\n  margin-bottom: 4rem;\n}\n\n.custom-input {\n  border: 0.1px solid #D1D1D5;\n  outline: none;\n  cursor: text;\n  font-size: 1.6rem;\n  padding: 2rem 1.6rem;\n  border-radius: 5px;\n  color: #2A2A33;\n  transition: 0.4s ease;\n}\n.custom-input:focus {\n  border: 0.1rem solid #006aff;\n}\n\n.base-btn {\n  padding: 0.9rem 2rem;\n  border: 0.1rem solid #a7a6ab;\n  background: #ffffff;\n  color: #006aff;\n  transition: all 0.2s ease 0s;\n  border-radius: 0.5rem;\n  font-weight: 600;\n}\n.base-btn:hover {\n  color: #ffffff;\n  background: #006aff;\n}\n\nbutton {\n  outline: none;\n  background: transparent;\n  border: 0.1rem solid #d1d1d5;\n  color: #006aff;\n  font-size: 1.2rem;\n  font-weight: 400;\n  height: 100%;\n  padding: 0 1rem;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  transition: 0.2s ease 0s;\n  border-radius: 0.2rem;\n  line-height: 2.2rem;\n  display: block;\n}\n\nbutton:hover {\n  border-color: #006aff;\n}\n\nbutton:active,\nbutton:focus {\n  border-color: #006aff;\n  background-color: #006aff;\n  color: #ffffff;\n  outline: none;\n}\n\n::-webkit-scrollbar {\n  width: 0.5rem;\n}\n\n/* Track */\n::-webkit-scrollbar-track {\n  box-shadow: inset 0 0 0.5rem #f1f1f1;\n  border-radius: 1rem;\n}\n\n/* Handle */\n::-webkit-scrollbar-thumb {\n  background: #006aff;\n  border-radius: 0.5rem;\n}\n\n/* Handle on hover */\n::-webkit-scrollbar-thumb:hover {\n  opacity: 0.8;\n}\n\n.detail__content {\n  display: grid;\n  grid-template-columns: 1.2fr 1fr;\n  position: relative;\n}\n.detail__content--img {\n  background: #006aff;\n  position: -webkit-sticky;\n  position: sticky;\n  top: 0;\n  left: 0;\n  max-height: calc(100vh - (7rem + 1em));\n  overflow: auto;\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  grid-gap: 0.5rem;\n}\n.detail__images-wrapper {\n  width: 100%;\n}\n.detail__images-wrapper.main {\n  grid-column: 1/3;\n}\n.detail__images-wrapper img {\n  width: 100%;\n  height: auto;\n  -o-object-fit: cover;\n     object-fit: cover;\n  -o-object-position: center;\n     object-position: center;\n}\n.detail__detail--header {\n  color: #006aff;\n  border-bottom: 0.1rem solid #D1D1D5;\n}\n.detail__detail--header .logo h2 {\n  font-size: 3rem;\n  font-weight: bold;\n}\n.detail__detail--header .socials {\n  cursor: pointer;\n}", ""]);
+exports.push([module.i, ":root {\n  font-size: 62.5%;\n}\n\n*,\n*:before,\n*:after {\n  box-sizing: border-box;\n}\n\nbody {\n  margin: 0;\n  font-size: 1.6rem;\n}\n\na,\np,\nspan,\nlabel {\n  font-family: \"Roboto\", sans-serif;\n  font-weight: 300;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-family: \"Source Sans Pro\", sans-serif;\n}\n\np {\n  margin: 0;\n  padding: 0;\n}\n\na {\n  text-decoration: none;\n  color: #000000;\n}\na:hover {\n  text-decoration: none;\n  color: #006aff;\n}\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style-type: none;\n}\n\n.section {\n  padding: 3.2rem 0;\n}\n.section__title {\n  font-size: 2.6rem;\n  line-height: 4rem;\n  color: #000000;\n  font-weight: 700;\n  text-align: center;\n  margin-bottom: 4rem;\n}\n\n.custom-input {\n  border: 0.1px solid #D1D1D5;\n  outline: none;\n  cursor: text;\n  font-size: 1.6rem;\n  padding: 2rem 1.6rem;\n  border-radius: 5px;\n  color: #2A2A33;\n  transition: 0.4s ease;\n}\n.custom-input:focus {\n  border: 0.1rem solid #006aff;\n}\n\n.base-btn {\n  padding: 0.9rem 2rem;\n  border: 0.1rem solid #a7a6ab;\n  background: #ffffff;\n  color: #006aff;\n  transition: all 0.2s ease 0s;\n  border-radius: 0.5rem;\n  font-weight: 600;\n}\n.base-btn:hover {\n  color: #ffffff;\n  background: #006aff;\n}\n\nbutton {\n  outline: none;\n  background: transparent;\n  border: 0.1rem solid #d1d1d5;\n  color: #006aff;\n  font-size: 1.2rem;\n  font-weight: 400;\n  height: 100%;\n  padding: 0 1rem;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis;\n  transition: 0.2s ease 0s;\n  border-radius: 0.2rem;\n  line-height: 2.2rem;\n  display: block;\n}\n\nbutton:hover {\n  border-color: #006aff;\n}\n\nbutton:active,\nbutton:focus {\n  border-color: #006aff;\n  background-color: #006aff;\n  color: #ffffff;\n  outline: none;\n}\n\n::-webkit-scrollbar {\n  width: 0.5rem;\n}\n\n/* Track */\n::-webkit-scrollbar-track {\n  box-shadow: inset 0 0 0.5rem #f1f1f1;\n  border-radius: 1rem;\n}\n\n/* Handle */\n::-webkit-scrollbar-thumb {\n  background: #006aff;\n  border-radius: 0.5rem;\n}\n\n/* Handle on hover */\n::-webkit-scrollbar-thumb:hover {\n  opacity: 0.8;\n}\n\n.detail__content {\n  display: grid;\n  grid-template-columns: 1.2fr 1fr;\n  position: relative;\n}\n.detail__content--img {\n  position: -webkit-sticky;\n  position: sticky;\n  top: 0;\n  left: 0;\n  max-height: calc(100vh - (7rem + 1em));\n  overflow: auto;\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  grid-gap: 0.5rem;\n}\n.detail__images-wrapper {\n  width: 100%;\n}\n.detail__images-wrapper.main {\n  grid-column: 1/3;\n}\n.detail__images-wrapper img {\n  width: 100%;\n  height: auto;\n  -o-object-fit: cover;\n     object-fit: cover;\n  -o-object-position: center;\n     object-position: center;\n}\n.detail__detail--header {\n  color: #006aff;\n  border-bottom: 0.1rem solid #D1D1D5;\n}\n.detail__detail--header .logo h2 {\n  font-size: 3rem;\n  font-weight: bold;\n}\n.detail__detail--header .socials {\n  cursor: pointer;\n}", ""]);
 
 // exports
 
@@ -88322,9 +88322,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _DetailPage_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DetailPage.scss */ "./resources/js/components/Home/Pages/DetailPage/DetailPage.scss");
-/* harmony import */ var _DetailPage_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_DetailPage_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Common_Header_Header__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Common/Header/Header */ "./resources/js/components/Home/Common/Header/Header.js");
+/* harmony import */ var react_map_gl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-map-gl */ "./node_modules/react-map-gl/dist/esm/index.js");
+/* harmony import */ var _DetailPage_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./DetailPage.scss */ "./resources/js/components/Home/Pages/DetailPage/DetailPage.scss");
+/* harmony import */ var _DetailPage_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_DetailPage_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Common_Header_Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Common/Header/Header */ "./resources/js/components/Home/Common/Header/Header.js");
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -88336,6 +88339,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
  // scss
@@ -88350,10 +88354,31 @@ var DetailPage = function DetailPage(props) {
       images = _useState2[0],
       setImages = _useState2[1];
 
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    latitude: 10.8007178,
+    longitude: 106.6880956,
+    scrollZoom: true,
+    zoom: 16,
+    maxZoom: 20,
+    width: "100%",
+    height: "200px"
+  }),
+      _useState4 = _slicedToArray(_useState3, 2),
+      viewport = _useState4[0],
+      setViewport = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    latitude: 10.8007178,
+    longitude: 106.6880956
+  }),
+      _useState6 = _slicedToArray(_useState5, 2),
+      marker = _useState6[0],
+      setMarker = _useState6[1];
+
   console.log(images);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "detail page"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Common_Header_Header__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Common_Header_Header__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container-fluid"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", {
     className: "detail__content"
@@ -88387,7 +88412,36 @@ var DetailPage = function DetailPage(props) {
     className: "socials__item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fas fa-ellipsis-h mr-2"
-  }), " ", "More")))))));
+  }), " ", "More"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "detail__detail--header py-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
+    className: "property__infor--name h2 text-dark"
+  }, "5161 W Sunset Blvd"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: " property__infor--address text-dark"
+  }, "Los Angeles, CA 90027"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "property__infor mt-4 d-flex"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "base-btn mr-2 w-50"
+  }, "Request to apply"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "base-btn w-50"
+  }, "Request a tour"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_map_gl__WEBPACK_IMPORTED_MODULE_2__["default"], _extends({}, viewport, {
+    mapboxApiAccessToken: "pk.eyJ1Ijoia2hhbmhuZ3V5ZW4zMDA5IiwiYSI6ImNraDBpcDVhMTA4aGcyeG11cHlxY3l4cjQifQ.Bxluj-lCo_0fUlhhjjjgkg",
+    mapStyle: "mapbox://styles/khanhnguyen3009/ckhonyzfk14ez1alak9oox2qe",
+    onViewportChange: function onViewportChange(viewport) {
+      return setViewport(function () {
+        return viewport;
+      });
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_map_gl__WEBPACK_IMPORTED_MODULE_2__["Marker"], _extends({}, marker, {
+    offsetLeft: -20,
+    offsetTop: -10
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fas fa-map-marker-alt text-primary h1"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "detail__detail--header mt-5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "text-dark  h2"
+  }, "Nearby apartment"))))));
 };
 
 DetailPage.propTypes = {};
